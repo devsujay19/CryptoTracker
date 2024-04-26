@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker | Crypto Currency Rate Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://coinranking.com/favicon.ico" type="image/x-icon">
+    <script src="https://astracss-cdn.vercel.app/0.1.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="bg-[#242424] text-white py-4 mb-4">
+        <div class="container text-center">
+            <h1 id="appName" class="font-[cursive] text-3xl text-teal-300"></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="input-group mb-4">
+            <input type="text" id="searchInput" class="form-control bg-dark border-[#909090] text-white placeholder:text-[#8f8f8f]" placeholder="Search CryptoTracker...">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="searchButton">
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="font-normal cursor-help" title="The Graphical Visual of the Crypto Currencies.">Icon
+                        </th>
+                        <th class="cursor-help" title="The Name of the Crypto Currencies.">Name</th>
+                        <th class="cursor-help"
+                            title="The Graphical Symbol that represents the Crypto Currencies, especially in reference to an amount of money">
+                            Symbol</th>
+                        <th cla.ss="cursor-help"
+                            title="The amount of one crypto currency in exchange for another currency. The exchange rate indicates how much crypto currency or other currency you'll receive in the exchange.">
+                            Price/Rate</th>
+                        <th class="cursor-help"
+                            title="The price of crypto currency changes based on supply and demand. When demand is high and supply is low, the price increases, and when demand is low and supply is high, the price decreases.">
+                            Price Change</th>
+                        <th class="cursor-help"
+                            title="The 24-hour volume of a crypto currency is the total value of all crypto currency transactions that take place over a 24-hour period. It's a key metric for traders to gauge interest in a crypto currency and its overall health. A high 24-hour volume means that there is high demand for the symbol and that it is healthy and viable. A low 24-hour volume may indicate that the symbol is not as popular as others.">
+                            24 Hours Volume</th>
+                        <th class="cursor-help"
+                            title="Market Capitalization is a metric that measures the total value of a crypto currency. It's calculated by multiplying the current price of a crypto currency by the number of coins in circulation.">
+                            Market Capitalization</th>
+                    </tr>
+                </thead>
+                <tbody id="cryptoTable">
+                    <tr>
+                        <td colspan="7" class="text-center">
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-border" role="status">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="bg-[#242424] text-white py-4 mt-4">
+        <div class="container text-center justify-center flex gap-2">
+            <p id="copyrightYear"></p>
+            <p id="separator" class="font-extrabold"></p>
+            <p id="license"></p>
+            <p id="separator2" class="font-extrabold"></p>
+            <p id="developer"></p>
+        </div>
+    </footer>
+</body>
+</html>
